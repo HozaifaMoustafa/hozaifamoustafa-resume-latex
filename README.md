@@ -6,9 +6,9 @@ A clean, professional LaTeX resume template. Fork this repo and build your own r
 
 ## Preview
 
-![Resume Preview](resume_preview.png)
+![Resume Preview](hozaifamoustafa_resume_preview.png)
 
-See [`resume.pdf`](resume.pdf) for the full PDF.
+See [`hozaifamoustafa_resume.pdf`](hozaifamoustafa_resume.pdf) for the full PDF.
 
 ---
 
@@ -29,7 +29,7 @@ cd hozaifamoustafa-resume-latex
 
 ### 3. Edit the Template
 
-Open [`resume.tex`](resume.tex) and replace the placeholder content with your own:
+Open [`hozaifamoustafa_resume.tex`](hozaifamoustafa_resume.tex) and replace the placeholder content with your own:
 
 - Name & contact info
 - Education
@@ -40,10 +40,10 @@ Open [`resume.tex`](resume.tex) and replace the placeholder content with your ow
 ### 4. Compile
 
 ```bash
-pdflatex resume.tex
+pdflatex hozaifamoustafa_resume.tex
 ```
 
-This generates `resume.pdf`.
+This generates `hozaifamoustafa_resume.pdf`.
 
 ---
 
@@ -51,9 +51,9 @@ This generates `resume.pdf`.
 
 ```
 .
-├── resume.tex           # Main resume source (edit this)
-├── resume.pdf           # Compiled output
-├── resume_preview.png   # README preview image
+├── hozaifamoustafa_resume.tex           # Main resume source (edit this)
+├── hozaifamoustafa_resume.pdf           # Compiled output
+├── hozaifamoustafa_resume_preview.png   # README preview image
 ├── LICENSE              # MIT License
 └── README.md            # This file
 ```
@@ -68,7 +68,7 @@ Git already tracks every change automatically:
 
 ```bash
 # See full history of your resume
-git log -- resume.tex
+git log -- hozaifamoustafa_resume.tex
 
 # See what changed in a specific commit
 git show <commit-hash>
@@ -83,7 +83,7 @@ Using dated filenames:
 - Makes it harder for others to use as a template
 - Defeats the purpose of version control
 
-Keep one stable filename (`resume.tex`) and let Git handle the history.
+Keep one stable filename (`hozaifamoustafa_resume.tex`) and let Git handle the history.
 
 ---
 
