@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Hozaifa Moustafa
+% Adapted for: Hozaifa Moustafa
+% Inspired by: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{lmodern}
+
+% --- FIX: Add T1 font encoding ---
+\usepackage[T1]{fontenc} 
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{5pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge\scshape Hozaifa Moustafa} \\ \vspace{4pt}
+    \small 
+    Alexandria, Egypt $\cdot$ +201033199960 $\cdot$ 
+    \href{mailto:Hozaifa.dev@outlook.com}{\underline{Hozaifa.dev@outlook.com}} \\
+    \href{https://www.linkedin.com/in/hozaifamoustafa/}{\underline{linkedin.com/in/hozaifamoustafa}} $\cdot$ 
+    \href{https://github.com/HozaifaDev}{\underline{github.com/HozaifaDev}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \small{Data Scientist and Data Engineer with a track record of building production-ready AI systems, automated data pipelines, and intelligent analytics platforms. Taught 400+ students industry-standard data frameworks. Led IEEE student branch from 0 to 170+ members.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pharos University}{Alexandria, Egypt}
+      {B.Sc. Computer Science \& AI, Data Science Major $\cdot$ GPA: 3.0/4.0}{Sep 2022 -- Jun 2026}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Alshaya AI}{Remote (KSA)}
+      {Operation \& Automation Engineer}{Dec 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Building automated solutions for legacy systems, serving clients across KSA, China, and global markets.}
+        \resumeItem{Enhancing client experience and reducing operational overhead through intelligent workflow automation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Arabian Academy}{Alexandria, Egypt}
+      {Data Analysis Instructor}{Sep 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Instructed 400+ graduates in industry-standard data analysis frameworks, emphasizing practical implementation and real-world data workflows.}
+        \resumeItem{Enabled graduates to build automated daily, weekly, and monthly data pipelines, directly improving job placement rates and operational efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {STC TV}{Remote (KSA)}
+      {Data Analytics Intern}{Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a predictive recommendation system using hybrid TF-IDF metadata modeling and custom engagement forecasting (ARIMA/SARIMA), driving a 28\% increase in content personalization metrics.}
+        \resumeItem{Streamlined viewer metric definitions, resolving structural churn analysis uncertainties to optimize executive visual dashboards.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Pharos University}{Alexandria, Egypt}
+      {Volunteer Programming Instructor}{Summers 2023 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Taught foundational programming, data structures, and OOP design to undergraduate students across three summer cohorts.}
+        \resumeItem{Inspired students to independently build data projects post-course, with several securing industry roles.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{UpHeal RAG System} $|$ \emph{Python, ChromaDB, Sentence Transformers, LLM Agents}}{Nov 2025 -- Jun 2026}
+          \resumeItemListStart
+            \resumeItem{Built a multi-agent RAG orchestration system with a Bayesian Network assessment engine to automate healthcare decision workflows. \href{https://github.com/Upheal1/Upheal-RAG-System}{\underline{github.com/Upheal1/Upheal-RAG-System}}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Media Station} $|$ \emph{Python, Scrapy, BERT, Tableau, PostgreSQL}}{Client Project}
+          \resumeItemListStart
+            \resumeItem{Built an automated data pipeline using asynchronous web scraping and BERT-based sentiment analysis to deliver real-time news monitoring dashboards for a media client.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Invoice Processing Pipeline} $|$ \emph{Python, Django, OpenCV, PostgreSQL}}{Client Project}
+          \resumeItemListStart
+            \resumeItem{Developed a document parsing and computer vision pipeline to automate invoice data extraction, ledger matching, and transactional accounting workflows.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Salary \& Manager Tracking System} $|$ \emph{Python, Pandas, SQL, Power BI}}{2025}
+          \resumeItemListStart
+            \resumeItem{Engineered an ETL and database normalization framework to track salary disbursements, audit managerial discrepancies, and flag anomalies via relational data logic. \href{https://github.com/HozaifaMoustafa/tracking-bad-managers-salary-payment}{\underline{github.com/HozaifaMoustafa/tracking-bad-managers-salary-payment}}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Amazon Reviews Sentiment Analysis} $|$ \emph{Deep Learning, Python}}{Oct 2024}
+          \resumeItemListStart
+            \resumeItem{Built a deep sequential neural model for sentiment classification of customer reviews. Presented findings at ESPC IEEE Section Egypt on marketing strategy applications.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------VOLUNTEERING & LEADERSHIP-----------
+\section{Volunteering \& Leadership}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Chairman} $|$ IEEE PUA Student Branch}{May 2024 -- Dec 2025}
+        \resumeItemListStart
+          \resumeItem{Built the branch from 0 to 170+ students with 50+ core members across HR, Technical, and PR committees.}
+          \resumeItem{Organized 5 mega events with 300+ attendees; established full operational documentation, meeting schedules, and committee reports customized for Pharos University regulations.}
+        \resumeItemListEnd
+    \resumeProjectHeading
+        {\textbf{Founder} $|$ Pharos Foresight Magazine}{Jan 2024 -- Jun 2024}
+    \resumeProjectHeading
+        {\textbf{Technical Member} $|$ Google Developer Student Clubs (GDSC)}{Sep 2023 -- Jun 2024}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, R, Bash} \\
+     \textbf{Data Engineering}{: ETL Pipelines, Data Modeling, PostgreSQL, Docker, Scrapy} \\
+     \textbf{Data Science \& AI}{: LLM Orchestration, RAG, Agentic Architectures, ML/DL (RNN, LSTM), BERT, Tableau, Power BI} \\
+     \textbf{Developer Tools}{: Git, GitHub, Excel, LaTeX}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications \& Training}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Data Analytics Specialist} $|$ Google - Digital Egypt Pioneers Initiative (DEPI)}{Apr 2024 -- Oct 2024}
+    \resumeProjectHeading
+        {\textbf{Quantum Computing \& Programming} $|$ QBronze138 -- QWorld}{Aug 2023}
+    \resumeProjectHeading
+        {\textbf{Entrepreneurship Training} $|$ ITIDA -- TIED InnovEgypt}{Sep 2023}
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{SeaPerch ROV Competition} $|$ 2nd Place}{Aug 2025}
+    \resumeProjectHeading
+        {\textbf{ICMTC Competition} $|$ Speech Recognition Model}{Jun 2024}
+    \resumeProjectHeading
+        {\textbf{ECPC} $|$ Competitive Programming}{Jun 2023}
+  \resumeSubHeadingListEnd
+
+\end{document}
