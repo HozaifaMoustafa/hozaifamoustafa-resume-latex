@@ -6,7 +6,9 @@ A clean, professional LaTeX resume template. Fork this repo and build your own r
 
 ## Preview
 
-See [`resume.pdf`](resume.pdf) for a live example.
+![Resume Preview](resume_preview.png)
+
+See [`resume.pdf`](resume.pdf) for the full PDF.
 
 ---
 
@@ -49,10 +51,11 @@ This generates `resume.pdf`.
 
 ```
 .
-├── resume.tex      # Main resume source (edit this)
-├── resume.pdf      # Compiled output
-├── LICENSE         # MIT License
-└── README.md       # This file
+├── resume.tex           # Main resume source (edit this)
+├── resume.pdf           # Compiled output
+├── resume_preview.png   # README preview image
+├── LICENSE              # MIT License
+└── README.md            # This file
 ```
 
 ---
