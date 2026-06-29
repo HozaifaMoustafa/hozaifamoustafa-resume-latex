@@ -66,7 +66,9 @@ Before editing the template, read [`RESUME_GUIDE.md`](RESUME_GUIDE.md) — it co
 ├── hozaifamoustafa_resume.tex           # Main resume source (edit this)
 ├── hozaifamoustafa_resume.pdf           # Compiled output
 ├── hozaifamoustafa_resume_preview.png   # README preview image
-├── RESUME_GUIDE.md      # HR-informed guide to writing a strong resume
+├── RESUME_GUIDE.md      # HR-informed guide: structure, ATS, gap analysis
+├── gap_analysis_prompt.md               # Prompt template: "what am I missing?"
+├── CLAUDE.md            # Coding agent instructions (both resume workflows)
 ├── LICENSE              # MIT License
 └── README.md            # This file
 ```
