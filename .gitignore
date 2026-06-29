@@ -27,3 +27,7 @@ Thumbs.db
 
 # Generated PDFs (uncomment if you don't want to track compiled PDFs)
 # *.pdf
+
+# Local prompts and notes
+linkedin_prompt.md
+gap_analysis_prompt.md

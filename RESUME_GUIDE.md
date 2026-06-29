@@ -210,7 +210,57 @@ If you hesitate on any of these, revise before sending.
 
 ---
 
-## Sources and Inspiration
+## 13. What Am I Missing? — Technical Gap Analysis
+
+Most resumes fail not because of formatting, but because they lack **proof** for the target role. This section helps you identify the gap and close it with a single well-chosen project.
+
+**The core insight:** Recruiters hire for proof, not potential. "Missing" = no evidence on your resume that you can handle the core challenge of the role you are applying for.
+
+---
+
+### Step 1 — Identify your target role
+
+Pick the closest match from this list:
+Data Engineer · ML/AI Engineer · Backend Engineer · Full-Stack Engineer · Data Scientist · DevOps/Cloud Engineer · Frontend Engineer · Mobile Engineer
+
+---
+
+### Step 2 — Find your gap
+
+For each row, check whether a recruiter scanning your Projects and Skills sections in 8 seconds can see clear evidence of each required proof point. If not — that is your gap.
+
+| Target Role | Required Proof Points | Most Common Gap | Recommended Project to Build |
+|---|---|---|---|
+| Data Engineer | Pipeline orchestration, data modeling, cloud storage | No end-to-end pipeline | ETL pipeline: public dataset → Airflow/dbt → Postgres or BigQuery, deployed on cloud |
+| ML / AI Engineer | Trained + deployed model, monitoring, retraining | No production code | FastAPI serving a trained model + drift monitoring dashboard |
+| Backend Engineer | API design, auth, caching, scale | No real-world scale proof | REST API with JWT auth, Redis cache, rate limiting, Dockerized |
+| Full-Stack Engineer | Working product with DB + UI | No deployed app | Full-stack CRUD app: React + backend API + DB, deployed on Vercel/Railway |
+| Data Scientist | EDA → model → insight communication | No reproducible notebook | End-to-end analysis: raw data → cleaned → model → findings in a readable notebook or dashboard |
+| DevOps / Cloud Engineer | CI/CD pipeline, IaC, monitoring | No infrastructure-as-code | Terraform-provisioned infra + GitHub Actions CI/CD + CloudWatch or Grafana alerts |
+| Frontend Engineer | Live product or component library | No live deployment | Portfolio site or component library deployed with accessibility and responsive design |
+| Mobile Engineer | Published or installable app | No real device testing | App on TestFlight or APK with crash reporting wired |
+
+---
+
+### Step 3 — Build it right
+
+One focused project that directly demonstrates the missing proof point is worth more than three vague ones.
+
+When building it:
+- Scope it to 1–2 weeks of focused work
+- Deploy it — a live link or installable artifact is proof, a local repo is not
+- Document it: one-sentence description, tech stack, and a measurable outcome
+- Name it clearly on your resume ("Retail Sales Forecast Pipeline", not "Python Project")
+
+---
+
+### Step 4 — For a personalized analysis
+
+The table above covers the most common gaps by role. For a deeper, personalized answer based on your actual resume content, use the `gap_analysis_prompt.md` file in this repo — fill it in and send it to any LLM.
+
+---
+
+
 
 These criteria are derived from publicly available HR research, ATS documentation, and hiring manager guides including:
 
