@@ -47,6 +47,18 @@ This generates `hozaifamoustafa_resume.pdf`.
 
 ---
 
+## Resume Best Practices Guide
+
+Before editing the template, read [`RESUME_GUIDE.md`](RESUME_GUIDE.md) — it covers:
+
+- **Section ordering logic** based on your background (student vs. experienced, relevant vs. unrelated degree)
+- ATS compatibility tips
+- How to quantify achievements
+- Common mistakes that cost interviews
+- Tailoring your resume per application
+
+---
+
 ## Project Structure
 
 ```
@@ -54,6 +66,7 @@ This generates `hozaifamoustafa_resume.pdf`.
 ├── hozaifamoustafa_resume.tex           # Main resume source (edit this)
 ├── hozaifamoustafa_resume.pdf           # Compiled output
 ├── hozaifamoustafa_resume_preview.png   # README preview image
+├── RESUME_GUIDE.md      # HR-informed guide to writing a strong resume
 ├── LICENSE              # MIT License
 └── README.md            # This file
 ```
